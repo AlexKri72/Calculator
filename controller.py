@@ -1,6 +1,7 @@
 import calc_complex
 import calc_float
 import ui
+import log
 
 
 def run():
@@ -10,4 +11,5 @@ def run():
     else:
         result = calc_float.calc(temp[0], temp[1], temp[2])
     print(result)
+    log.log_to_file(temp, result)
     return result
